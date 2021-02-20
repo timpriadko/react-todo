@@ -22,8 +22,9 @@ class AddItemForm extends Component {
     e.preventDefault();
 
     this.props.addItem(this.state.label);
-
-    this.state.label = '';
+    this.setState({
+      label: ''
+    })
   }
 
   render() {
